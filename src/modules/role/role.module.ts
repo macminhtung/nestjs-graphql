@@ -10,7 +10,6 @@ import { ScopeResolver } from 'modules/role/scope/scope.resolver';
 
 @Module({
   imports: [TypeOrmModule.forFeature([RoleEntity, ScopeEntity, UserEntity])],
-  exports: [RoleService, ScopeService],
   providers: [RoleResolver, ScopeResolver, RoleService, ScopeService],
 })
 export class RoleModule {}
